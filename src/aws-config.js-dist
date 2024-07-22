@@ -1,0 +1,8 @@
+const awsConfig = {
+    region: 'us-west-2',
+    userPoolId: 'COGNITO-USER-POOL-ID',
+    userPoolWebClientId: 'COGNITO-USER-POOL-CLIENT-ID',
+    identityPoolId: 'COGNITO-IDENTITY-POOL-ID',
+    tableGamesRegion: 'us-west-2',
+    tableGames: 'HeroesTriviaScores'
+};

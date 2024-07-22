@@ -80,15 +80,15 @@ Resources:
   CognitoUserPoolClient:
     Type: AWS::Cognito::UserPoolClient
     Properties:
-      ClientName: HeroesTriviaTriviaClient
+      ClientName: HeroesTriviaClient
       GenerateSecret: false
       UserPoolId: !Ref CognitoUserPool
 
   CognitoIdentityPool:
     Type: AWS::Cognito::IdentityPool
     Properties:
-      IdentityPoolName: HeroesTriviaTriviaIdentityPool
-      AllowUnauthenticatedIdentities: false
+      IdentityPoolName: HeroesTriviaIdentityPool
+      AllowUnauthenticatedIdentities: true
       CognitoIdentityProviders:
         - ClientId: !Ref CognitoUserPoolClient
           ProviderName: !GetAtt CognitoUserPool.ProviderName
@@ -155,7 +155,7 @@ Resources:
   DynamoDBTable:
     Type: AWS::DynamoDB::Table
     Properties:
-      TableName: HeroesTriviaTriviaScores
+      TableName: HeroesTriviaScores
       AttributeDefinitions:
         - AttributeName: userId
           AttributeType: S
