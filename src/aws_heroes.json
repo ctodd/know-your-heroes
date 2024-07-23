@@ -721,17 +721,6 @@
     "project_links": []
   },
   {
-    "name": "Anas Khattar",
-    "category": "AWS COMMUNITY HERO",
-    "image_url": "https://d1.awsstatic.com/Developer%20Marketing/developer-center/anas-khattar.b17e262cc78eb9722ed63efef368bca3664c8122.png",
-    "full_description": "Failed to load information",
-    "employment": "Not found",
-    "hero_since": "Not found",
-    "location": "Not found",
-    "social_links": {},
-    "project_links": []
-  },
-  {
     "name": "Anders Bjørnestad",
     "category": "AWS COMMUNITY HERO",
     "image_url": "https://d1.awsstatic.com/Developer%20Marketing/developer-center/andersb-headshotcircle-100px.052b170f287e5636bb36445718503af6e0301b58.png",
@@ -4963,17 +4952,6 @@
         "icon_url": "https://d1.awsstatic.com/events/aws-hosted-events/2017/UKIR/twitter-logo-button.9a468ead894e69ca96f91346f6fbcd6316fee4ef.png"
       }
     },
-    "project_links": []
-  },
-  {
-    "name": "Kesha Williams",
-    "category": "AWS MACHINE LEARNING HERO",
-    "image_url": "https://d1.awsstatic.com/Developer%20Marketing/Community%20Heroes/keshaw-headshotcircle-100px.1ab50838e324979b315f20d3de7872d184ee3304.png",
-    "full_description": "Failed to load information",
-    "employment": "Not found",
-    "hero_since": "Not found",
-    "location": "Not found",
-    "social_links": {},
     "project_links": []
   },
   {
@@ -9884,6 +9862,51 @@
       {
         "text": "Design Driven Development",
         "url": "https://youtu.be/0_udtVA-lZ4"
+      }
+    ]
+  },
+  {
+    "name": "Kesha Williams",
+    "category": "AWS MACHINE LEARNING HERO",
+    "image_url": "https://d1.awsstatic.com/Developer%20Marketing/Community%20Heroes/keshaw-headshotcircle-100px.1ab50838e324979b315f20d3de7872d184ee3304.png",
+    "full_description": "Kesha Williams is an esteemed AWS Machine Learning Hero recognized for her substantial contributions to the AWS community. As an award-winning software engineer and a celebrated TED Speaker, Kesha has been at the forefront of integrating AWS machine learning capabilities into innovative software solutions using Amazon SageMaker and Amazon Bedrock. Her commitment to technological excellence is mirrored in her active role in mentoring, speaking at premier industry events like NDC Conferences and AWS re:Invent, and creating AI/ML educational content on LinkedIn Learning and Pluralsight. Kesha's dedication to the AWS community is not just about promoting machine learning best practices; it's also about fostering an inclusive environment that encourages innovation and growth. Her leadership and advocacy have significantly impacted how developers and data scientists leverage AWS services, making her an indispensable part of the AWS Hero community. To connect with her, grab time on her Topmate calendar.",
+    "employment": "Kesha Williams, Director, Slalom",
+    "location": "Atlanta, USA",
+    "hero_since": "Hero since 2019",
+    "social_links": {
+      "LinkedIn": {
+        "url": "https://www.linkedin.com/in/java-rock-star-kesha/",
+        "icon_url": "https://d1.awsstatic.com/Developer%20Marketing/evangelists/evangelist-social-in.38cc161b1326a71d56c033b4e277e219e4674927.png"
+      },
+      "Twitter": {
+        "url": "https://twitter.com/keshawillz",
+        "icon_url": "https://d1.awsstatic.com/Developer%20Marketing/evangelists/evangelist-social-twitter.d5c88bd8a227c6dd41aaff2f5c59386032e6be0e.png"
+      },
+      "Personal Website": {
+        "url": "http://www.kesha.tech/",
+        "icon_url": "https://d1.awsstatic.com/Developer%20Marketing/developer-center/social-media-icons-tech-doc.77af90ef1fa6f4f35e6f82faedb17fd1a8926f3e.png"
+      }
+    },
+    "project_links": [
+      {
+        "text": "NDC Conferences",
+        "url": "https://ndcconferences.com/"
+      },
+      {
+        "text": "AWS re:Invent",
+        "url": "https://youtu.be/jW7wxU9GQzM?si=JAB9VnaR6K2h4130"
+      },
+      {
+        "text": "LinkedIn Learning",
+        "url": "https://www.linkedin.com/learning/instructors/kesha-williams"
+      },
+      {
+        "text": "Pluralsight",
+        "url": "https://www.pluralsight.com/authors/kesha-williams"
+      },
+      {
+        "text": "Topmate calendar",
+        "url": "https://topmate.io/kesha_williams"
       }
     ]
   }
