@@ -33,6 +33,7 @@ This game serves as a thought experiment. Without having any experience developi
 
 The game consists of three major components:
 * Python Website Scraper
+* Python Trivia Question Generation Agent
 * AWS Cloudformation Template
 * Javascript Game
 
@@ -109,6 +110,14 @@ The scraper is designed to load each page of the Heroes website, read each of th
 ```
 
 The JSON file can be used to generate a list of Trivia Questions about AWS Heroes using an LLM. This was a manual process using the [Claude.ai](https://claude.ai) chatbot which involved uploaded a version of the [aws_heroes.json](aws_heroes.json) file with all the URLs removed using ```grep -vi url```.
+
+### The Trivia Question Generation Agent
+
+In order to generate trivia questions for 262 Heroes, this needed to be done programmatically. Fortunately the latest models know how to build agents, so this went quickly. The prompt and temperature settings needed some tweaking to generate reasonable questions (the jury is still out on that).
+
+The agent requires an Anthropic API key, which as of this writing is free and comes with $5 worth of credits by validating your account with an SMS message. The cost per Hero to generate 15 Trivia questions with Claude 3.5 Sonnet is about $0.02. There's me giving you my $0.02...
+
+The agent takes the aws_heroes.json file as input, this is produced by the Scraper, and outputs a file named aws_heroes_questions.json. Both these files need to be uploaded to the S3 bucket in order for the game to work. The most recently generated files are in the [src](src) directory.
 
 ### Running the Scraper
 
