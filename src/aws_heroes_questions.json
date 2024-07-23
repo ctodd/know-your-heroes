@@ -30846,161 +30846,6 @@
       ]
     },
     {
-      "hero_name": "Renato Losio",
-      "questions": [
-        {
-          "question": "What is the description provided?",
-          "options": [
-            "Failed to load information",
-            "No description available",
-            "Description is missing",
-            "Data not found"
-          ],
-          "correct_answer": "Failed to load information"
-        },
-        {
-          "question": "What information is not found?",
-          "options": [
-            "Location details",
-            "Employment details",
-            "Project details",
-            "All of the above"
-          ],
-          "correct_answer": "All of the above"
-        },
-        {
-          "question": "What can be inferred about Renato Losio's hero status?",
-          "options": [
-            "Hero since unknown",
-            "Not a hero",
-            "Became a hero recently",
-            "Heroic deeds unspecified"
-          ],
-          "correct_answer": "Hero since unknown"
-        },
-        {
-          "question": "What can be said about Renato Losio's projects?",
-          "options": [
-            "No projects listed",
-            "Projects not mentioned",
-            "Projects failed to load",
-            "Projects are confidential"
-          ],
-          "correct_answer": "Projects failed to load"
-        },
-        {
-          "question": "What is the primary issue with the provided information?",
-          "options": [
-            "Information is incomplete",
-            "Information is inaccurate",
-            "Information is missing",
-            "Information failed to load"
-          ],
-          "correct_answer": "Information failed to load"
-        },
-        {
-          "question": "What can be inferred about Renato Losio's location?",
-          "options": [
-            "Location is unknown",
-            "Location is confidential",
-            "Location is irrelevant",
-            "Location is not provided"
-          ],
-          "correct_answer": "Location is not provided"
-        },
-        {
-          "question": "What can be said about Renato Losio's employment status?",
-          "options": [
-            "Employment status unknown",
-            "Unemployed",
-            "Self-employed",
-            "Employment details unavailable"
-          ],
-          "correct_answer": "Employment details unavailable"
-        },
-        {
-          "question": "What is the most accurate statement about the provided information?",
-          "options": [
-            "Information is sufficient",
-            "Information is lacking",
-            "Information is contradictory",
-            "Information is unreliable"
-          ],
-          "correct_answer": "Information is lacking"
-        },
-        {
-          "question": "What can be inferred about Renato Losio's heroic deeds?",
-          "options": [
-            "Heroic deeds unspecified",
-            "No heroic deeds mentioned",
-            "Heroic deeds are classified",
-            "Heroic deeds are insignificant"
-          ],
-          "correct_answer": "Heroic deeds unspecified"
-        },
-        {
-          "question": "What is the most accurate description of the provided information?",
-          "options": [
-            "Information is complete",
-            "Information is incomplete",
-            "Information is accurate",
-            "Information is inaccurate"
-          ],
-          "correct_answer": "Information is incomplete"
-        },
-        {
-          "question": "What can be said about Renato Losio's projects?",
-          "options": [
-            "Projects are unknown",
-            "Projects are confidential",
-            "Projects are unimportant",
-            "Projects failed to load"
-          ],
-          "correct_answer": "Projects failed to load"
-        },
-        {
-          "question": "What is the most accurate statement about Renato Losio's location?",
-          "options": [
-            "Location is undisclosed",
-            "Location is irrelevant",
-            "Location is confidential",
-            "Location is not found"
-          ],
-          "correct_answer": "Location is not found"
-        },
-        {
-          "question": "What can be inferred about Renato Losio's employment?",
-          "options": [
-            "Employment is undisclosed",
-            "Employment is irrelevant",
-            "Employment is confidential",
-            "Employment is not found"
-          ],
-          "correct_answer": "Employment is not found"
-        },
-        {
-          "question": "What is the most accurate statement about Renato Losio's hero status?",
-          "options": [
-            "Hero status is unconfirmed",
-            "Hero status is irrelevant",
-            "Hero status is confidential",
-            "Hero status is not found"
-          ],
-          "correct_answer": "Hero status is not found"
-        },
-        {
-          "question": "What is the most accurate description of the provided information?",
-          "options": [
-            "Information is redacted",
-            "Information is classified",
-            "Information is incomplete",
-            "Information is inaccurate"
-          ],
-          "correct_answer": "Information is incomplete"
-        }
-      ]
-    },
-    {
       "hero_name": "Richard Fan",
       "questions": [
         {
@@ -31462,161 +31307,6 @@
             "Focus only on successful projects"
           ],
           "correct_answer": "Steer from initial spark to successful fruition"
-        }
-      ]
-    },
-    {
-      "hero_name": "Rolf Koski",
-      "questions": [
-        {
-          "question": "What is the description provided?",
-          "options": [
-            "Failed to load information",
-            "No description available",
-            "Description is missing",
-            "Data not found"
-          ],
-          "correct_answer": "Failed to load information"
-        },
-        {
-          "question": "What information is not found?",
-          "options": [
-            "Location",
-            "Employment",
-            "Hero since",
-            "All of the above"
-          ],
-          "correct_answer": "All of the above"
-        },
-        {
-          "question": "What is the status of projects?",
-          "options": [
-            "No projects listed",
-            "Projects not found",
-            "Projects field is empty",
-            "Projects data unavailable"
-          ],
-          "correct_answer": "Projects field is empty"
-        },
-        {
-          "question": "What can be inferred about location?",
-          "options": [
-            "Location is unknown",
-            "Location is not provided",
-            "No location information",
-            "Location data is missing"
-          ],
-          "correct_answer": "Location is not provided"
-        },
-        {
-          "question": "What can be said about employment?",
-          "options": [
-            "Employment status unknown",
-            "No employment data given",
-            "Employment information unavailable",
-            "Employment details are missing"
-          ],
-          "correct_answer": "No employment data given"
-        },
-        {
-          "question": "What is the status of 'Hero since'?",
-          "options": [
-            "Hero since not found",
-            "No 'Hero since' information",
-            "Hero since data unavailable",
-            "Hero since is missing"
-          ],
-          "correct_answer": "Hero since not found"
-        },
-        {
-          "question": "What can be inferred from description?",
-          "options": [
-            "Description failed to load",
-            "No description provided",
-            "Description data is missing",
-            "Description could not load"
-          ],
-          "correct_answer": "Description failed to load"
-        },
-        {
-          "question": "What information is available about projects?",
-          "options": [
-            "No project data",
-            "Projects information unavailable",
-            "Project details are missing",
-            "Projects field is empty"
-          ],
-          "correct_answer": "Projects field is empty"
-        },
-        {
-          "question": "What can be said about location data?",
-          "options": [
-            "Location data not found",
-            "No location information given",
-            "Location is unknown",
-            "Location details are missing"
-          ],
-          "correct_answer": "Location data not found"
-        },
-        {
-          "question": "What is the status of employment information?",
-          "options": [
-            "Employment data unavailable",
-            "No employment information provided",
-            "Employment details are missing",
-            "Employment status unknown"
-          ],
-          "correct_answer": "Employment data unavailable"
-        },
-        {
-          "question": "What can be inferred about 'Hero since'?",
-          "options": [
-            "Hero since data missing",
-            "No 'Hero since' information",
-            "Hero since is unknown",
-            "Hero since not provided"
-          ],
-          "correct_answer": "Hero since is unknown"
-        },
-        {
-          "question": "What is the issue with description?",
-          "options": [
-            "Description could not load",
-            "No description available",
-            "Description data is missing",
-            "Failed to load description"
-          ],
-          "correct_answer": "Failed to load description"
-        },
-        {
-          "question": "What information is missing about projects?",
-          "options": [
-            "No project details",
-            "Projects information unavailable",
-            "Project data is missing",
-            "Projects field is empty"
-          ],
-          "correct_answer": "Project data is missing"
-        },
-        {
-          "question": "What can be said about employment status?",
-          "options": [
-            "Employment status unknown",
-            "No employment data provided",
-            "Employment information is missing",
-            "Employment details unavailable"
-          ],
-          "correct_answer": "Employment information is missing"
-        },
-        {
-          "question": "What is the issue with 'Hero since'?",
-          "options": [
-            "Hero since data unavailable",
-            "No 'Hero since' information",
-            "Hero since is missing",
-            "Hero since not found"
-          ],
-          "correct_answer": "Hero since not found"
         }
       ]
     },
@@ -33322,161 +33012,6 @@
             "10 events"
           ],
           "correct_answer": "6 events"
-        }
-      ]
-    },
-    {
-      "hero_name": "Scott Liao",
-      "questions": [
-        {
-          "question": "What is the description provided?",
-          "options": [
-            "Failed to load information",
-            "Not available",
-            "No data found",
-            "Description missing"
-          ],
-          "correct_answer": "Failed to load information"
-        },
-        {
-          "question": "What information is missing about Scott Liao?",
-          "options": [
-            "Location",
-            "Employment",
-            "Hero since date",
-            "All of the above"
-          ],
-          "correct_answer": "All of the above"
-        },
-        {
-          "question": "What can be inferred about Scott Liao's projects?",
-          "options": [
-            "No projects listed",
-            "Projects not found",
-            "Projects unavailable",
-            "No project information provided"
-          ],
-          "correct_answer": "No project information provided"
-        },
-        {
-          "question": "Based on the information given, what is known about Scott Liao's location?",
-          "options": [
-            "Location not found",
-            "No location data",
-            "Location unknown",
-            "Location not provided"
-          ],
-          "correct_answer": "Location not found"
-        },
-        {
-          "question": "What can be concluded about Scott Liao's employment status?",
-          "options": [
-            "Employment not found",
-            "No employment data",
-            "Employment unknown",
-            "Employment information missing"
-          ],
-          "correct_answer": "Employment not found"
-        },
-        {
-          "question": "What is the status of the information about Scott Liao's hero since date?",
-          "options": [
-            "Hero since not found",
-            "No hero since data",
-            "Hero since date unknown",
-            "Hero since date missing"
-          ],
-          "correct_answer": "Hero since not found"
-        },
-        {
-          "question": "Based on the provided information, what can be said about Scott Liao's description?",
-          "options": [
-            "Description failed to load",
-            "No description available",
-            "Description not found",
-            "Description is missing"
-          ],
-          "correct_answer": "Description failed to load"
-        },
-        {
-          "question": "What can be inferred about the availability of information regarding Scott Liao?",
-          "options": [
-            "Information is incomplete",
-            "Information is lacking",
-            "Information is unavailable",
-            "Information is missing"
-          ],
-          "correct_answer": "Information is incomplete"
-        },
-        {
-          "question": "Based on the data provided, what is the status of Scott Liao's project information?",
-          "options": [
-            "Projects failed to load",
-            "No project data",
-            "Project information unavailable",
-            "Projects not listed"
-          ],
-          "correct_answer": "Projects failed to load"
-        },
-        {
-          "question": "What can be concluded about the overall information provided about Scott Liao?",
-          "options": [
-            "Information is insufficient",
-            "Information is incomplete",
-            "Information is lacking",
-            "Information is unavailable"
-          ],
-          "correct_answer": "Information is insufficient"
-        },
-        {
-          "question": "Based on the data, what is the status of Scott Liao's location information?",
-          "options": [
-            "Location data missing",
-            "Location information unavailable",
-            "Location not provided",
-            "Location failed to load"
-          ],
-          "correct_answer": "Location not found"
-        },
-        {
-          "question": "What can be inferred about Scott Liao's employment details?",
-          "options": [
-            "Employment details missing",
-            "Employment information unavailable",
-            "Employment data failed to load",
-            "Employment not listed"
-          ],
-          "correct_answer": "Employment not found"
-        },
-        {
-          "question": "Based on the information provided, what is the status of Scott Liao's hero since date?",
-          "options": [
-            "Hero since date missing",
-            "Hero since date unavailable",
-            "Hero since date not found",
-            "Hero since date failed to load"
-          ],
-          "correct_answer": "Hero since not found"
-        },
-        {
-          "question": "What can be concluded about the availability of Scott Liao's project information?",
-          "options": [
-            "Project information missing",
-            "Project data unavailable",
-            "Project details not found",
-            "Projects failed to load"
-          ],
-          "correct_answer": "Projects failed to load"
-        },
-        {
-          "question": "Based on the data provided, what is the overall status of the information about Scott Liao?",
-          "options": [
-            "Information is incomplete",
-            "Information is lacking",
-            "Information failed to load",
-            "Information is unavailable"
-          ],
-          "correct_answer": "Information failed to load"
         }
       ]
     },
@@ -40452,6 +39987,316 @@
             "AWS Chief Architect"
           ],
           "correct_answer": "Esteemed AWS Machine Learning Hero"
+        }
+      ]
+    },
+    {
+      "hero_name": "Rolf Koski",
+      "questions": [
+        {
+          "question": "What is Rolf Koski's role at Knowit?",
+          "options": [
+            "VP, CCO",
+            "Software Engineer",
+            "Data Analyst",
+            "Project Manager"
+          ],
+          "correct_answer": "VP, CCO"
+        },
+        {
+          "question": "Which company is Knowit an AWS Partner for?",
+          "options": [
+            "Oracle",
+            "IBM",
+            "SAP",
+            "Nordics"
+          ],
+          "correct_answer": "Nordics"
+        },
+        {
+          "question": "In what year did Rolf become a Hero?",
+          "options": [
+            "2015",
+            "2017",
+            "2019",
+            "2021"
+          ],
+          "correct_answer": "2019"
+        },
+        {
+          "question": "What type of initiatives does Rolf advocate for?",
+          "options": [
+            "Cybersecurity",
+            "Generative AI",
+            "Cloud Migration",
+            "Both Generative AI and Sustainability"
+          ],
+          "correct_answer": "Both Generative AI and Sustainability"
+        },
+        {
+          "question": "Which AWS Community event did Rolf initially found?",
+          "options": [
+            "AWS re:Invent",
+            "AWS Summit",
+            "AWS Community Days Nordics",
+            "AWS Loft"
+          ],
+          "correct_answer": "AWS Community Days Nordics"
+        },
+        {
+          "question": "What is Rolf's role in AWS user groups?",
+          "options": [
+            "Attendee",
+            "Speaker",
+            "Community Lead",
+            "Organizer"
+          ],
+          "correct_answer": "Community Lead"
+        },
+        {
+          "question": "In which cities are the AWS user groups led by Rolf?",
+          "options": [
+            "Oslo and Copenhagen",
+            "Stockholm and Helsinki",
+            "Gothenburg and Malmo",
+            "Tampere and Turku"
+          ],
+          "correct_answer": "Stockholm and Helsinki"
+        },
+        {
+          "question": "What is the frequency of the AWS Community Days Nordics event?",
+          "options": [
+            "Monthly",
+            "Quarterly",
+            "Annually",
+            "Biannually"
+          ],
+          "correct_answer": "Annually"
+        },
+        {
+          "question": "What is Rolf's role in the Cloud?",
+          "options": [
+            "Developer",
+            "Thought Leader",
+            "Architect",
+            "Administrator"
+          ],
+          "correct_answer": "Thought Leader"
+        },
+        {
+          "question": "Which country is Knowit headquartered in?",
+          "options": [
+            "Finland",
+            "Norway",
+            "Denmark",
+            "Sweden"
+          ],
+          "correct_answer": "Sweden"
+        },
+        {
+          "question": "What is Rolf's area of expertise at Knowit?",
+          "options": [
+            "Managed Services",
+            "Consulting",
+            "Development",
+            "Training"
+          ],
+          "correct_answer": "Managed Services"
+        },
+        {
+          "question": "What is Rolf's technical role at Knowit?",
+          "options": [
+            "Network Engineer",
+            "Database Administrator",
+            "Cloud Architect",
+            "Security Analyst"
+          ],
+          "correct_answer": "Cloud Architect"
+        },
+        {
+          "question": "In which city is Rolf Koski based?",
+          "options": [
+            "Stockholm",
+            "Oslo",
+            "Helsinki",
+            "Tampere"
+          ],
+          "correct_answer": "Tampere"
+        },
+        {
+          "question": "What is the status of the AWS Community Days Nordics event?",
+          "options": [
+            "Inactive",
+            "Discontinued",
+            "Active",
+            "Suspended"
+          ],
+          "correct_answer": "Active"
+        },
+        {
+          "question": "What is Knowit's partnership level with AWS?",
+          "options": [
+            "Select Partner",
+            "Advanced Partner",
+            "Premier Partner",
+            "Consulting Partner"
+          ],
+          "correct_answer": "Premier Partner"
+        }
+      ]
+    },
+    {
+      "hero_name": "Renato Losio",
+      "questions": [
+        {
+          "question": "What is Renato Losio's current employment?",
+          "options": [
+            "Funambol",
+            "Accenture",
+            "Deloitte",
+            "Capgemini"
+          ],
+          "correct_answer": "Funambol"
+        },
+        {
+          "question": "In which city does Renato Losio reside?",
+          "options": [
+            "Berlin",
+            "Munich",
+            "Hamburg",
+            "Frankfurt"
+          ],
+          "correct_answer": "Berlin"
+        },
+        {
+          "question": "What is Renato Losio's role at Funambol?",
+          "options": [
+            "Principal Cloud Architect",
+            "Senior Software Engineer",
+            "DevOps Engineer",
+            "Data Scientist"
+          ],
+          "correct_answer": "Principal Cloud Architect"
+        },
+        {
+          "question": "Since when has Renato Losio been a Hero?",
+          "options": [
+            "2018",
+            "2019",
+            "2020",
+            "2021"
+          ],
+          "correct_answer": "2020"
+        },
+        {
+          "question": "Which AWS service has Renato Losio covered?",
+          "options": [
+            "Amazon RDS Proxy",
+            "Amazon S3",
+            "Amazon EC2",
+            "Amazon Lambda"
+          ],
+          "correct_answer": "Amazon RDS Proxy"
+        },
+        {
+          "question": "What is one of Renato Losio's areas of interest?",
+          "options": [
+            "Serverless technologies",
+            "Mobile app development",
+            "Machine learning",
+            "Cybersecurity"
+          ],
+          "correct_answer": "Serverless technologies"
+        },
+        {
+          "question": "Which cloud provider has Renato Losio been working with?",
+          "options": [
+            "Google Cloud Platform",
+            "Microsoft Azure",
+            "IBM Cloud",
+            "AWS"
+          ],
+          "correct_answer": "AWS"
+        },
+        {
+          "question": "At which event has Renato Losio spoken?",
+          "options": [
+            "AWS re:Invent",
+            "Google Cloud Next",
+            "Microsoft Ignite",
+            "Oracle OpenWorld"
+          ],
+          "correct_answer": "AWS re:Invent"
+        },
+        {
+          "question": "What is one of Renato Losio's hobbies?",
+          "options": [
+            "Trail running",
+            "Skydiving",
+            "Rock climbing",
+            "Surfing"
+          ],
+          "correct_answer": "Trail running"
+        },
+        {
+          "question": "Which AWS service has Renato Losio covered?",
+          "options": [
+            "Amazon Aurora Serverless",
+            "Amazon DynamoDB",
+            "Amazon Redshift",
+            "Amazon Athena"
+          ],
+          "correct_answer": "Amazon Aurora Serverless"
+        },
+        {
+          "question": "What is Renato Losio's role at InfoQ?",
+          "options": [
+            "Staff Editor",
+            "Contributor",
+            "Moderator",
+            "Reviewer"
+          ],
+          "correct_answer": "Staff Editor"
+        },
+        {
+          "question": "Since when has Renato Losio been working with AWS?",
+          "options": [
+            "2009",
+            "2010",
+            "2011",
+            "2012"
+          ],
+          "correct_answer": "2011"
+        },
+        {
+          "question": "Which certification does Renato Losio hold?",
+          "options": [
+            "AWS Certified Solutions Architect",
+            "AWS Certified Developer",
+            "AWS Certified SysOps Administrator",
+            "AWS Certified Practitioner"
+          ],
+          "correct_answer": "AWS Certified Practitioner"
+        },
+        {
+          "question": "What is one of Renato Losio's primary areas of interest?",
+          "options": [
+            "Relational databases on the cloud",
+            "Quantum computing",
+            "Blockchain technology",
+            "Internet of Things"
+          ],
+          "correct_answer": "Relational databases on the cloud"
+        },
+        {
+          "question": "What is Renato Losio passionate about?",
+          "options": [
+            "Knowledge sharing",
+            "Competitive gaming",
+            "Extreme sports",
+            "Cryptocurrency trading"
+          ],
+          "correct_answer": "Knowledge sharing"
         }
       ]
     }
