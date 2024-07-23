@@ -124,8 +124,10 @@ Resources:
               - Effect: Allow
                 Action:
                   - dynamodb:PutItem
-                  - dynamodb:Scan
-                Resource: !GetAtt DynamoDBTable.Arn
+                  - dynamodb:Query
+                Resource: 
+                  - !GetAtt DynamoDBTable.Arn
+                  - !Sub "${DynamoDBTable.Arn}/index/*"
 
   CognitoUnauthRole:
     Type: AWS::IAM::Role
@@ -149,8 +151,10 @@ Resources:
             Statement:
               - Effect: Allow
                 Action:
-                  - dynamodb:Scan
-                Resource: !GetAtt DynamoDBTable.Arn
+                  - dynamodb:Query
+                Resource: 
+                  - !GetAtt DynamoDBTable.Arn
+                  - !Sub "${DynamoDBTable.Arn}/index/*"
 
   DynamoDBTable:
     Type: AWS::DynamoDB::Table
@@ -161,11 +165,27 @@ Resources:
           AttributeType: S
         - AttributeName: timestamp
           AttributeType: S
+        - AttributeName: scorePartition
+          AttributeType: S
+        - AttributeName: score
+          AttributeType: N
       KeySchema:
         - AttributeName: userId
           KeyType: HASH
         - AttributeName: timestamp
           KeyType: RANGE
+      GlobalSecondaryIndexes:
+        - IndexName: ScoreIndex
+          KeySchema:
+            - AttributeName: scorePartition
+              KeyType: HASH
+            - AttributeName: score
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: 5
+            WriteCapacityUnits: 5
       ProvisionedThroughput:
         ReadCapacityUnits: 5
         WriteCapacityUnits: 5

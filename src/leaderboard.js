@@ -33,17 +33,23 @@ async function updateLeaderboard() {
             docClient = new AWS.DynamoDB.DocumentClient({ region: awsConfig.tableGamesRegion });
         }
 
-        console.log("Attempting to scan DynamoDB table");
+        console.log("Attempting to query DynamoDB table");
         const params = {
             TableName: awsConfig.tableGames,
+            IndexName: "ScoreIndex",
+            KeyConditionExpression: "scorePartition = :sp",
+            ExpressionAttributeValues: {
+                ":sp": "SCORE" // A constant value for partitioning
+            },
             ProjectionExpression: "userId, playerName, score",
+            ScanIndexForward: false, // This will sort in descending order
             Limit: 10
         };
         
-        const data = await docClient.scan(params).promise();
-        console.log("DynamoDB scan successful, data:", data);
+        const data = await docClient.query(params).promise();
+        console.log("DynamoDB query successful, data:", data);
         
-        const leaderboardData = data.Items.sort((a, b) => b.score - a.score);
+        const leaderboardData = data.Items;
 
         const leaderboardBody = document.getElementById('leaderboardBody');
         leaderboardBody.innerHTML = '';
