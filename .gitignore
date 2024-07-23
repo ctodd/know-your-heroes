@@ -1,2 +1,5 @@
 .DS_Store
 aws-config.js
+scripts/old
+scripts/logs
+scripts/*json
