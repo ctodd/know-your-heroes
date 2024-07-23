@@ -132,25 +132,17 @@ async function saveScore(score) {
     if (user) {
         try {
             // Refresh credentials
-            await new Promise((resolve, reject) => {
-                AWS.config.credentials.refresh((error) => {
-                    if (error) {
-                        console.error('Error refreshing credentials', error);
-                        reject(error);
-                    } else {
-                        resolve();
-                    }
-                });
-            });
+            await refreshCredentials();
 
             const docClient = new AWS.DynamoDB.DocumentClient({ region: awsConfig.tableGamesRegion });
             const params = {
                 TableName: awsConfig.tableGames,
                 Item: {
                     userId: user.username,
-                    playerName: user.playerName,
+                    playerName: user.playerName || user.username,
                     score: score,
-                    timestamp: new Date().toISOString()
+                    timestamp: new Date().toISOString(),
+                    scorePartition: "SCORE"
                 }
             };
             await docClient.put(params).promise();
@@ -165,12 +157,14 @@ async function saveScore(score) {
     }
 }
 
-// New function to handle saving pending score
 async function savePendingScore() {
     if (pendingScore !== null) {
         await saveScore(pendingScore);
         pendingScore = null;
     }
 }
+
+// Call this function after successful login/signup
+window.savePendingScore = savePendingScore;
 
 loadGameData();
