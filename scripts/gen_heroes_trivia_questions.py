@@ -165,5 +165,5 @@ def process_heroes_file(input_file, output_file):
 
 # Usage
 input_file = "aws_heroes.json"
-output_file = "aws_heroes_trivia_questions.json"
+output_file = "aws_heroes_questions.json"
 process_heroes_file(input_file, output_file)
