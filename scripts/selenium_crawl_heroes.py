@@ -3,6 +3,8 @@ import json
 import signal
 import sys
 import time
+from urllib.parse import urlparse, urlunparse
+from collections import defaultdict
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -32,6 +34,32 @@ def save_results():
 
 def capitalize_words(s):
     return ' '.join(word.capitalize() for word in s.split())
+
+
+def identify_platform(url, alt, title):
+    alt_lower = alt.lower() if alt else ''
+    title_lower = title.lower() if title else ''
+    domain = urlparse(url).netloc.lower()
+    
+    platform_keywords = {
+        'twitter.com': 'Twitter',
+        'linkedin.com': 'LinkedIn',
+        'github.com': 'GitHub',
+        'youtube.com': 'YouTube',
+        'spotify.com': 'Spotify',
+        'dev.to': 'Dev.to'
+    }
+    
+    if alt and alt_lower != 'twitter':
+        return alt
+    if title and title_lower != 'twitter':
+        return title
+    
+    for keyword, platform in platform_keywords.items():
+        if keyword in domain:
+            return platform
+    
+    return 'Website'
 
 def get_full_description(driver, learn_more_url):
     debug_print(f"Opening new tab for URL: {learn_more_url}")
@@ -67,21 +95,58 @@ def get_full_description(driver, learn_more_url):
 
         debug_print("Extracting social media links")
         social_links = {}
-        social_elements = driver.find_elements(By.CSS_SELECTOR, "figure.lb-tiny-iblock.lb-img")
-        for element in social_elements:
-            link_elem = element.find_element(By.TAG_NAME, "a")
-            href = link_elem.get_attribute('href')
-            img_elem = element.find_element(By.TAG_NAME, "img")
-            title = img_elem.get_attribute('title')
-            alt = img_elem.get_attribute('alt')
-            icon_url = img_elem.get_attribute('src')
+        alt_count = defaultdict(int)
+
+        # Find all figure elements and adjacent 'a' elements
+        elements = driver.find_elements(By.CSS_SELECTOR, "figure.lb-tiny-iblock.lb-img, figure.lb-tiny-iblock.lb-img + a")
+
+        # First pass: count occurrences of each alt text
+        for element in elements:
+            if element.tag_name == 'figure':
+                try:
+                    img_elem = element.find_element(By.TAG_NAME, "img")
+                    alt = img_elem.get_attribute('alt')
+                    if alt:
+                        alt_count[alt.lower()] += 1
+                except NoSuchElementException:
+                    continue
+
+        # Second pass: extract social links
+        for i in range(0, len(elements), 2):
+            figure_elem = elements[i] if i < len(elements) else None
+            link_elem = elements[i+1] if i+1 < len(elements) else None
             
-            if href and (title or alt):
-                platform = capitalize_words(title or alt)
+            if figure_elem and figure_elem.tag_name != 'figure':
+                continue  # Skip if not a figure element
+            
+            try:
+                # Try to get href from figure's nested 'a' tag first
+                href = figure_elem.find_element(By.TAG_NAME, "a").get_attribute('href')
+            except NoSuchElementException:
+                # If no 'a' tag in figure, use the adjacent 'a' tag
+                href = link_elem.get_attribute('href') if link_elem else None
+            
+            if href:
+                img_elem = figure_elem.find_element(By.TAG_NAME, "img")
+                alt = img_elem.get_attribute('alt')
+                title = img_elem.get_attribute('title')
+                icon_url = img_elem.get_attribute('src')
+                
+                # If alt text is duplicated or empty, use the identify_platform function
+                if not alt or alt_count[alt.lower()] > 1:
+                    platform = identify_platform(href, alt, title)
+                else:
+                    platform = alt
+                
+                # Use the text content of the adjacent 'a' tag if available
+                if link_elem:
+                    platform = link_elem.text.strip() or platform
+                
                 social_links[platform] = {
                     'url': href,
                     'icon_url': icon_url
                 }
+
         hero_info['social_links'] = social_links
         debug_print(f"Social links: {social_links}")
 
@@ -153,6 +218,13 @@ def scrape_aws_heroes(max_pages=None):
                     
                     learn_more = card.find_element(By.XPATH, ".//a[contains(text(), 'Learn more')]")
                     learn_more_url = learn_more.get_attribute('href')
+                    print (learn_more_url)
+
+                    # Add trailing slash if missing
+                    parsed_url = urlparse(learn_more_url)
+                    if parsed_url.path and not parsed_url.path.endswith('/'):
+                        learn_more_url = urlunparse(parsed_url._replace(path=parsed_url.path + '/'))
+                        print (learn_more_url)
                     
                     debug_print(f"Getting full description for {hero['name']}")
                     hero_info = get_full_description(driver, learn_more_url)
