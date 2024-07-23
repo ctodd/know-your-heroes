@@ -71,7 +71,7 @@ Next navigate to the Game's S3 bucket and upload all of the files in the [src](s
 
 ### Configure a custom URL (OPTIONAL)
 
-If you wish to use a custom URL with the game instead of the generic CloudFront URL provided, you can edit the Cloudfront settings page. Instructions on how to do this, as well as associated tasks such as creating an SSL certificate (in us-east-1 only!), you can learn more on the AWS Documentation site
+If you wish to use a custom URL with the game instead of the generic CloudFront URL provided, you can edit the Cloudfront settings page. Instructions on how to do this, as well as associated tasks such as creating an SSL certificate (Amazon Certificate Manager requires the cert be created in us-east-1), you can learn more on the AWS Documentation site
 
 https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/CNAMEs.html
 
@@ -142,7 +142,7 @@ Another note is that the JSON is created on the fly, that way if you have to ter
 
 ## Usage
 
-The game is a truely "Serverless" game, comprised primarily of static Javascript, HTML, and CSS files. The AWS Infrastructure consists of CloudFront, S3, Cognito, DynamoDB, and IAM. No logging is enabled by default, and the storage and traffic requirements are so low, the game should fall under the AWS Free Tier with minimal charges for subsequent years.
+The game is a truly "Serverless" game, comprised primarily of static Javascript, HTML, and CSS files. The AWS Infrastructure consists of CloudFront, S3, Cognito, DynamoDB, and IAM. No logging is enabled by default, and the storage and traffic requirements are so low, the game should fall under the AWS Free Tier with minimal charges for subsequent years.
 
 In theory there isn't anything to maintain here except in the event a security issue arises, and/or updates to the AWS SDK files. Follow the Git Repo to be alerted to updates.
 
@@ -169,6 +169,14 @@ Much work was put into a trouble free experience, and a number of problems were 
 1. Signup Modal doesn't validate email address structure.
 2. No error message returned when login/password is incorrect.
 3. May need to add exception handling for entering/resending the Confirmation Code 
+
+## Feature Ideas
+
+* Click to continue after answer
+* Flag a bad question/answer
+* Link to hero profile
+* Heroes edit their own questions
+* Jeopardy timer animation with declining points as time runs out
 
 ## Contributing
 
